@@ -1,3 +1,4 @@
+// TẠ VĂN THÁI 22521377 
 import { Feather } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import React, { useState } from 'react';

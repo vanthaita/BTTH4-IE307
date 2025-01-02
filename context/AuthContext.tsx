@@ -1,6 +1,7 @@
 import * as Crypto from 'expo-crypto';
 import jwtDecode from 'jwt-decode';
 import React, { createContext, useContext, useState } from 'react';
+
 import { UserData } from '~/app/types/type';
 
 interface AuthContextType {
@@ -34,7 +35,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [token, setToken] = useState<string | null>(null);
   const [user, setUser] = useState<UserData | null>(null);
   const [isLogged, setIsLogged] = useState<boolean>(false);
-
+  
   const login = async () => {
     try {
       const randomId = Math.floor(Math.random() * 9) + 1;

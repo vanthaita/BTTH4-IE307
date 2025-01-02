@@ -2,8 +2,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
 
 import { useAuth } from './AuthContext';
-import { CartItem } from '~/app/types/type';
 
+import { CartItem } from '~/app/types/type';
 
 interface CartContextType {
   cartItems: CartItem[];
